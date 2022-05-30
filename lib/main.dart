@@ -15,11 +15,30 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Aplikasi Kuis'),
-        ),
-        body: Text('Hallo Selamat Datang'),
-      ),
+          appBar: AppBar(
+            title: Text('Aplikasi Ku'),
+          ),
+          body: Column(
+            children: [
+              Text('Pertanyaan'),
+              ElevatedButton(
+                onPressed: null,
+                child: Text('Jawaban 1'),
+              ),
+              ElevatedButton(
+                onPressed: null,
+                child: Text('Jawaban 2'),
+              ),
+              ElevatedButton(
+                onPressed: null,
+                child: Text('Jawaban 3'),
+              ),
+              ElevatedButton(
+                onPressed: null,
+                child: Text('Jawaban 4'),
+              ),
+            ],
+          )),
     );
   }
 }
